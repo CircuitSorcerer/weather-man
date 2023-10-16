@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .website-title {
+    font-size: 2.5em;
+    color: #4285f4; /* Google blue */
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    display: inline-block;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1em;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 1em;
+    background-color: #4285f4; /* Google blue */
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #357ae8; /* Darker Google blue */
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    border-color: #357ae8; /* Darker Google blue */
+  }
+
+  .current-weather {
+    margin-bottom: 20px;
+  }
+  
+  .city-name {
+    font-size: 2em;
+    color: #4285f4; /* Google blue */
+    margin-bottom: 10px;
+  }
+  
+  .date {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .weather-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .temperature, .humidity, .wind-speed {
+    font-size: 1.2em;
+    margin: 5px 10px;
+  }
+  
+  .five-day-forecast {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .forecast-heading {
+    width: 100%;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .forecast-day {
+    flex: 1 1 14%; /* Adjust as needed */
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .small-weather-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .small-temperature {
+    font-size: 1em;
+  }
