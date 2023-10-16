@@ -18,7 +18,7 @@ async function convertToCoordinates(query) {
         const data = await response.json();
         
         const result = data.results[0];
-        const cityInfo = {"city": result.name, "lat": result.latitude, "long": result.longitude, "country": result.country};
+        const cityInfo = {"city": result.name, "lat": result.latitude, "long": result.longitude, "country": result.country, "timezone": result.timezone};
         console.log(cityInfo);
         searchHistory(cityInfo);
         window.location.href = `./weatherpage.html?city=${cityInfo.city}`;
@@ -57,6 +57,7 @@ function renderHistory() {
         console.log(i.city);
         const cityListEl = document.createElement("li");
         const cityLinkEl = document.createElement("a");
+        cityLinkEl.setAttribute("href", `./weatherpage.html?city=${i.city}`)
         cityLinkEl.textContent = i.city + ", " + i.country
         cityListEl.append(cityLinkEl);
         historyListEl.append(cityListEl);

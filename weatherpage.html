@@ -9,44 +9,24 @@
 <body>
   <div class="container">
     <div class="current-weather">
-      <h2 class="city-name">City Name</h2>
+      <h2 class="city-name"></h2>
       <p class="date">October 16, 2023</p>
       <div class="weather-info">
-        <img src="icon.png" alt="Weather Icon" class="weather-icon">
-        <p class="temperature">25°C</p>
-        <p class="humidity">Humidity: 70%</p>
-        <p class="wind-speed">Wind Speed: 15 km/h</p>
+        <img src="icon.png" alt="" id="current-weather-icon">
+        <p class="current-temperature"></p>
+        <p class="current-humidity"></p>
+        <p class="current-wind-speed"></p>
       </div>
     </div>
     
     <div class="five-day-forecast">
-      <h2 class="forecast-heading">7-Day Forecast</h2>
-      <div class="forecast-day">
-        <p class="day">Monday</p>
-        <img src="icon.png" alt="Weather Icon" class="small-weather-icon">
-        <p class="small-temperature">25°C</p>
-      </div>
-      <div class="forecast-day">
-        <p class="day">Monday</p>
-        <img src="icon.png" alt="Weather Icon" class="small-weather-icon">
-        <p class="small-temperature">25°C</p>
-      </div>
-      <div class="forecast-day">
-        <p class="day">Monday</p>
-        <img src="icon.png" alt="Weather Icon" class="small-weather-icon">
-        <p class="small-temperature">25°C</p>
-      </div>
-      <div class="forecast-day">
-        <p class="day">Monday</p>
-        <img src="icon.png" alt="Weather Icon" class="small-weather-icon">
-        <p class="small-temperature">25°C</p>
-      </div>
-      <div class="forecast-day">
-        <p class="day">Monday</p>
-        <img src="icon.png" alt="Weather Icon" class="small-weather-icon">
-        <p class="small-temperature">25°C</p>
-      </div>
+      <h2 class="forecast-heading">5-Day Forecast</h2>
+      
+      
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="./assets/script2.js"></script>
+  
 </body>
 </html>

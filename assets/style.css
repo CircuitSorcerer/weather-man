@@ -50,6 +50,9 @@ body {
   }
 
   .current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20px;
   }
   
@@ -67,6 +70,7 @@ body {
   
   .weather-info {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -77,14 +81,23 @@ body {
     margin-right: 10px;
   }
   
-  .temperature, .humidity, .wind-speed {
+  .current-temperature, .current-humidity, .current-wind-speed {
     font-size: 1.2em;
     margin: 5px 10px;
+  }
+
+  .current-humidity::before {
+    content: "Humidity: ";
+  }
+  
+  .current-wind-speed::before {
+    content: "Wind Speed: ";
   }
   
   .five-day-forecast {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   
   .forecast-heading {
